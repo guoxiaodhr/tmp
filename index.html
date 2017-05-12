@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	 $.ajax({
+                  type: "GET",
+                  url: "http://211.153.78.168/api/getApplyCourseListByName?usercode=09097891&apikey=46cf0073255d40e0dd3cf71a3559ba38",
+                  dataType: "jsonp",         //注意这里是jsonp而不是json
+                  success:function(msg){
+                      alert(msg.data[0].courseId);
+                  }
+              });
+	 </script>
+	
+	
+</head>
+<body>
+
+</body>
+</html>
